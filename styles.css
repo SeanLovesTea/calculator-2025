@@ -1,0 +1,108 @@
+/* 1. Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin & padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* 4. Ensure images and media are responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Set a default font and background color */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 6. Remove anchor tag styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Ensure buttons inherit font and remove default styles */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* 8. Set a minimum height for the body */
+html, body {
+  height: 100%;
+}
+
+/* 9. Prevent text selection for buttons and other UI elements */
+button, a {
+  user-select: none;
+}
+
+/* 10. Optional: Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.calculator {
+    width: 500px;
+    height: 700px;
+    background-color: antiquewhite;
+}
+.display {
+    background-color: azure;
+    height: 10%;
+    text-align: center;
+    padding: 1rem;
+}
+.calculations {
+    height: 70%;
+}
+.results {
+    height: 100%;
+    background-color: aquamarine;
+}
+.ops-btn-container {
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    grid-gap: 1px;
+}
+.ops-btn {
+    background-color: bisque;
+    cursor: pointer;
+}
+.num-container {
+    background-color: saddlebrown;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    grid-gap: 1px;
+}
+.num-btn {
+    background-color: sandybrown; 
+}
+#equals-btn {
+   width: 2rem; 
+   height: 2rem;
+   background-color: red;
+   text-align: center;
+   cursor: pointer;
+}
